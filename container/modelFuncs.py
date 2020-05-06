@@ -1,9 +1,4 @@
-__all__ = ["myBasicDense","create_model","CustomWrapper"]
-
-#from tensorflow.python.keras.models import Sequential
-#from tensorflow.python.keras.layers import Dense, Dropout
-#from tensorflow.python.keras.wrappers.scikit_learn import KerasClassifier
-#from tensorflow.python.keras.callbacks import EarlyStopping
+__all__ = ["myBasicDense", "create_model", "CustomWrapper"]
 
 import os
 os.environ['KERAS_BACKEND'] = 'theano'

@@ -35,6 +35,7 @@ for npcs in pcs:
                              ('reducer', PCA(n_components=npcs)),
                              ('standard', MaxAbsScaler()),
                              ('model', create_model(n_features=npcs, neurons1=neuron1, neurons2=neuron2))])
+            # checar se existe problema em nao usar o wrapper KerasClassifier
 
             file_name = "user.pedrosergiot.attention_pca_filter_first/" \
                         "user.pedrosergiot.attention_pca_filter_first." \
