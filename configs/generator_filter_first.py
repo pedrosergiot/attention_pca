@@ -39,7 +39,7 @@ for npcs in pcs:
 
             file_name = "user.pedrosergiot.attention_pca_filter_first/" \
                         "user.pedrosergiot.attention_pca_filter_first." \
-                        "npcs{}.neurons1{}.neurons2{}.pkl".format(npcs, neuron1, neuron2)
+                        "npcs{}.neurons1_{}.neurons2_{}.pkl".format(npcs, neuron1, neuron2)
 
 
             dirname = os.path.dirname(file_name)

@@ -48,7 +48,6 @@ win_results = {}    # storage for results for each number of windows of signal u
 
 # Starting analysis
 for win in range(1, nwin+1):
-    print('win')
     # Cut data to window size and filter it
     cut_data = exames[:, 0:win * win_size, :]
 
@@ -80,6 +79,7 @@ for win in range(1, nwin+1):
         transformed_data = np.asarray(transformed_data, dtype=np.float32)
 
         data32, data38 = filt_data(transformed_data[:, :, electrodes_used], fs, band / 2, order, f1, f2)
+        # OBS: Applying filter before or after PCA still has to be discussed
 
         energy32 = get_energy(data32)
         energy38 = get_energy(data38)
